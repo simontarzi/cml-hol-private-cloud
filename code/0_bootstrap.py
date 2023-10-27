@@ -113,7 +113,7 @@ def run_cmd(cmd, raise_err=True):
 
 
 # Define the CSV file path
-csv_file_path =  "/HU/DEMO/"+USERNAME+"WA_Fn-UseC_-Telco-Customer-Churn-.csv"
+csv_file_path =  "/HU/DEMO/"+USERNAME+"/WA_Fn-UseC_-Telco-Customer-Churn-.csv"
 
 # Attempt to check if the CSV file exists in HDFS
 dataset_check = run_cmd(f'hdfs dfs -test -f {csv_file_path}', raise_err=False)
